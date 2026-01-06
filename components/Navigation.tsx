@@ -43,8 +43,11 @@ export default function Navigation() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 cursor-pointer">
-          <div className="w-6 h-6 bg-white rounded"></div>
-          <span className="text-white text-xl font-semibold">Advisory</span>
+          <img 
+            src="/logo/CTG Official Logo-02 (1).png" 
+            alt="CTG Advisory Logo" 
+            className="h-16 w-auto"
+          />
         </Link>
 
         {/* Navigation Menu */}
