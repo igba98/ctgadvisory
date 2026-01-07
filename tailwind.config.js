@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-urbanist)', 'system-ui', 'sans-serif'],
+        sans: ['Aptos', 'system-ui', 'sans-serif'],
+        display: ['Aptos Display', 'Aptos', 'system-ui', 'sans-serif'],
       },
       colors: {
         'ctg-blue': '#063F5C',
