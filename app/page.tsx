@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <LandingPage />
       <AboutSnippet />
-      <OurServiceHomePage />
+      {/* <OurServiceHomePage /> */}
       <WhyChooseCTG />
       <Testimonials />
       <CTASection />

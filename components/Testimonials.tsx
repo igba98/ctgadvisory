@@ -63,18 +63,18 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="bg-primary py-20 px-8 overflow-hidden">
+    <section className="bg-white py-20 px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex items-center justify-between mb-12">
           <div>
             {/* Badge */}
-            <div className="text-white/60 text-sm font-medium uppercase tracking-wider mb-4">
+            <div className="text-primary/60 text-sm font-medium uppercase tracking-wider mb-4">
               TESTIMONIAL
             </div>
 
             {/* Heading */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-primary">
               Voices of Happy Clients
             </h2>
           </div>
@@ -83,11 +83,11 @@ export default function Testimonials() {
           <div className="hidden md:flex items-center space-x-3">
             <button
               onClick={handlePrevious}
-              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all group border border-white/20"
+              className="w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-all group border border-primary/20"
               aria-label="Previous testimonials"
             >
               <svg
-                className="w-5 h-5 text-white"
+                className="w-5 h-5 text-primary"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -102,11 +102,11 @@ export default function Testimonials() {
             </button>
             <button
               onClick={handleNext}
-              className="w-12 h-12 rounded-full bg-white hover:bg-secondary flex items-center justify-center transition-all group"
+              className="w-12 h-12 rounded-full bg-primary hover:bg-secondary flex items-center justify-center transition-all group"
               aria-label="Next testimonials"
             >
               <svg
-                className="w-5 h-5 text-primary group-hover:text-white transition-colors"
+                className="w-5 h-5 text-white group-hover:text-white transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -127,7 +127,7 @@ export default function Testimonials() {
           {visibleTestimonials.map((testimonial, index) => (
             <div
               key={`${currentIndex}-${index}`}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex flex-col"
+              className="bg-primary/5 backdrop-blur-sm border border-primary/10 rounded-2xl p-8 hover:bg-primary/10 hover:border-primary/20 transition-all duration-300 flex flex-col"
             >
               {/* Quote Icon */}
               <div className="mb-6">
@@ -141,16 +141,16 @@ export default function Testimonials() {
               </div>
 
               {/* Quote Text */}
-              <p className="text-white/80 text-base leading-relaxed mb-6 flex-grow">
+              <p className="text-gray-700 text-base leading-relaxed mb-6 flex-grow">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
               {/* Author Info */}
-              <div className="border-t border-white/10 pt-6">
-                <h4 className="text-white font-semibold text-lg mb-1">
+              <div className="border-t border-primary/10 pt-6">
+                <h4 className="text-primary font-semibold text-lg mb-1">
                   {testimonial.name}
                 </h4>
-                <p className="text-white/60 text-sm">{testimonial.role}</p>
+                <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </div>
             </div>
           ))}
@@ -160,11 +160,11 @@ export default function Testimonials() {
         <div className="flex md:hidden items-center justify-center space-x-3 mt-8">
           <button
             onClick={handlePrevious}
-            className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all border border-white/20"
+            className="w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-all border border-primary/20"
             aria-label="Previous testimonials"
           >
             <svg
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-primary"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -179,11 +179,11 @@ export default function Testimonials() {
           </button>
           <button
             onClick={handleNext}
-            className="w-12 h-12 rounded-full bg-white hover:bg-secondary flex items-center justify-center transition-all"
+            className="w-12 h-12 rounded-full bg-primary hover:bg-secondary flex items-center justify-center transition-all"
             aria-label="Next testimonials"
           >
             <svg
-              className="w-5 h-5 text-primary"
+              className="w-5 h-5 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -209,7 +209,7 @@ export default function Testimonials() {
               className={`h-2 rounded-full transition-all ${
                 Math.floor(currentIndex / itemsPerView) === index
                   ? "w-8 bg-secondary"
-                  : "w-2 bg-white/30 hover:bg-white/50"
+                  : "w-2 bg-primary/30 hover:bg-primary/50"
               }`}
               aria-label={`Go to testimonial set ${index + 1}`}
             />

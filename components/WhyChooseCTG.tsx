@@ -83,33 +83,33 @@ export default function WhyChooseCTG() {
   ];
 
   return (
-    <section className="bg-white py-20 px-8">
+    <section className="bg-ctg-blue py-20 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8">
             {/* Section Badge */}
-            <div className="inline-flex items-center space-x-2 bg-secondary/10 px-4 py-2 rounded-full">
+            <div className="inline-flex items-center space-x-2 bg-ctg-mustard/20 px-4 py-2 rounded-full">
               <svg
-                className="w-5 h-5 text-secondary"
+                className="w-5 h-5 text-ctg-mustard"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 11.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V7.89l7-3.11v8.2z" />
               </svg>
-              <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+              <span className="text-sm font-semibold text-ctg-white uppercase tracking-wider">
                 Why Choose CTG
               </span>
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-primary leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-ctg-white leading-tight">
               Your Partner in{" "}
-              <span className="text-secondary">Strategic Growth</span>
+              <span className="text-ctg-mustard">Strategic Growth</span>
             </h2>
 
             {/* Description */}
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-ctg-white/80 leading-relaxed">
               We don&apos;t just advise—we partner with you to transform vision
               into reality. Our commitment goes beyond consultation to deliver
               tangible, measurable results.
@@ -123,16 +123,16 @@ export default function WhyChooseCTG() {
                   className="flex items-start space-x-4 group hover:translate-x-2 transition-transform duration-300"
                 >
                   {/* Icon Container */}
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/5 group-hover:bg-secondary/20 flex items-center justify-center text-primary group-hover:text-secondary transition-all duration-300">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-ctg-white/10 group-hover:bg-ctg-mustard/20 flex items-center justify-center text-ctg-white group-hover:text-ctg-mustard transition-all duration-300">
                     {value.icon}
                   </div>
 
                   {/* Text Content */}
                   <div className="flex-1 pt-1">
-                    <h3 className="text-xl font-semibold text-primary mb-1">
+                    <h3 className="text-xl font-semibold text-ctg-white mb-1">
                       {value.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-ctg-white/70 leading-relaxed">
                       {value.description}
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export default function WhyChooseCTG() {
 
             {/* CTA Button */}
             <div className="pt-6">
-              <button className="bg-secondary hover:bg-secondary/90 text-primary px-8 py-4 rounded-full text-base font-semibold transition-all inline-flex items-center space-x-2 shadow-lg hover:shadow-xl group">
+              <button className="bg-ctg-mustard hover:bg-ctg-mustard/90 text-ctg-blue px-8 py-4 rounded-full text-base font-semibold transition-all inline-flex items-center space-x-2 shadow-lg hover:shadow-xl group">
                 <span>Learn More About Us</span>
                 <svg
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform"
@@ -173,18 +173,18 @@ export default function WhyChooseCTG() {
                   className="object-cover"
                 />
                 {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-ctg-blue/40 to-transparent"></div>
               </div>
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-secondary/20 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-ctg-mustard/30 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-ctg-white/10 rounded-full blur-3xl -z-10"></div>
 
             {/* Stats Badge Overlay */}
-            <div className="absolute bottom-8 left-8 bg-white rounded-2xl shadow-xl p-6 max-w-[200px]">
-              <div className="text-4xl font-light text-secondary mb-2">98%</div>
-              <p className="text-sm text-gray-600 font-medium">
+            <div className="absolute bottom-8 left-8 bg-ctg-white rounded-2xl shadow-xl p-6 max-w-[200px]">
+              <div className="text-4xl font-light text-ctg-mustard mb-2">98%</div>
+              <p className="text-sm text-ctg-blue font-medium">
                 Client Satisfaction Rate
               </p>
             </div>

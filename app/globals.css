@@ -3,13 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #000000;
   
-  /* Brand Colors */
-  --primary: #093F5D;
-  --secondary: #F6AC1C;
-  --white: #ffffff;
+  /* CTG Brand Colors */
+  --ctg-blue: #063F5C;
+  --ctg-mustard: #F4AB1B;
+  --ctg-white: #FFFFFF;
+  --ctg-black: #000000;
+  
+  /* Aliases for convenience */
+  --primary: #063F5C;
+  --secondary: #F4AB1B;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 body {

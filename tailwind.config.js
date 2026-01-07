@@ -14,9 +14,28 @@ module.exports = {
         sans: ['var(--font-urbanist)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: '#093F5D',
-        secondary: '#F6AC1C',
-        white: '#ffffff',
+        'ctg-blue': '#063F5C',
+        'ctg-mustard': '#F4AB1B',
+        'ctg-white': '#FFFFFF',
+        'ctg-black': '#000000',
+        primary: '#063F5C',
+        secondary: '#F4AB1B',
+        white: '#FFFFFF',
+        black: '#000000',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'scale(0.98)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        slowZoom: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-out forwards',
+        slowZoom: 'slowZoom 15s ease-out forwards',
       },
     },
   },
